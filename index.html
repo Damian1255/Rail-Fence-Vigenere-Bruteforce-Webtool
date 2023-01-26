@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Product Cipher Brute-force Decryption</h1>
-    <p>Designed to decrypt the ciphertext from Applied Cryptography Final Assignment.<br>It is identifed that the product cipher uses both Vigenère and Rail-fence cipher to encrypt the plaintext.</p>
-    <p id="message">Initializing. Please wait...</p>
-    <div class="container" style="display: none;">
-        <input type="text" id="test-input" placeholder="Enter your ciphertext"/>
-        <button id="submit-button" type="submit" pys-onClick="main">Decrypt</button>
-        <div id="status"></div>
-        <div id="output"></div>
+    <div class="container">
+        <h1>Product Cipher Brute-force Decryption</h1>
+        <p>Designed to decrypt the ciphertext from Applied Cryptography Final Assignment.<br>It is identifed that the product cipher uses both Vigenère and Rail-fence cipher to encrypt the plaintext.</p>
+        <p id="message">Initializing. Please wait...</p>
+        <div class="inputs" style="display: none;">
+            <input type="text" id="test-input" placeholder="Enter your ciphertext"/>
+            <button id="submit-button" type="submit" pys-onClick="main">Decrypt</button>
+            <div id="status"></div>
+            <div id="output"></div>
+        </div>
     </div>
     <py-script src="py/bruteforce.py"></py-script>
     <script>
         setTimeout(function() {
-            document.querySelector(".container").style.display = "block";
+            document.querySelector(".inputs").style.display = "block";
             document.querySelector("#message").style.display = "none";
         }, 6500);
     </script>
-    <div class="footer">Last updated at 25/1/2023</div>
+    <footer class="footer">Last updated at 25/1/2023</footer>
 </body>
 </html>

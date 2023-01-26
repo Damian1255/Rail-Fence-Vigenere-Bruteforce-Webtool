@@ -3,12 +3,16 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0px;
     text-align: center;
 }
 
 h3 {
     margin-bottom: 0px;
+}
+
+.container {
+    margin: 8px;
 }
 
 input {

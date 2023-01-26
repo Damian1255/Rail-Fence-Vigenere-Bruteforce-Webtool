@@ -61,3 +61,11 @@ button:hover {
     background: #227dc7;
     color: #fdfdfe;
 }
+
+#message {
+    margin-top: 40px;
+}
+
+#message p {
+    margin-top: 0px;
+}

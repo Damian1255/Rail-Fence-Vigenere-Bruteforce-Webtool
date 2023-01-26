@@ -12,7 +12,11 @@
     <div class="container">
         <h1>Product Cipher Brute-force Decryption</h1>
         <p>Designed to decrypt the ciphertext from Applied Cryptography Final Assignment.<br>It is identifed that the product cipher uses both Vigenère and Rail-fence cipher to encrypt the plaintext.</p>
-        <p id="message">Initializing. Please wait...</p>
+        <div id="message">
+            <!-- show a svg image -->
+            <img src="loading.svg" alt="loading icon" width="60px">
+            <p>Initializing. Please wait...</p>
+        </div>
         <div class="inputs" style="display: none;">
             <input type="text" id="test-input" placeholder="Enter your ciphertext"/>
             <button id="submit-button" type="submit" pys-onClick="main">Decrypt</button>

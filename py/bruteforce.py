@@ -96,6 +96,6 @@ def my_function(*args, **kwargs):
                     score += v_ciphertext.count(word.upper())
                 results.append([score, rf_key, v_key, v_ciphertext])
 
-    Element('output').element.innerHTML = ""
+    Element('output').element.innerHTML = "<h3>Results</h3>"
     for result in sorted(results, reverse=True)[:3]:
-        Element('output').element.innerHTML += f'Score = {result[0]} | Rail-Fence Key = {result[1]} | Vigenere Key = {result[2]} | Plain Text = {result[3]}<br>'
+        Element('output').element.innerHTML += f'<p>Score = {result[0]} | Rail-Fence Key = {result[1]} | Vigenere Key = {result[2]} | Plain Text = {result[3]}</p>'

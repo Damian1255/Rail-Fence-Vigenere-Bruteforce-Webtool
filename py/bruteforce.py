@@ -19,7 +19,6 @@ def decryptRailFence(cipher, key):
         if row == key - 1:
             dir_down = False
 
-        # place the marker
         rail[row][col] = '*'
         col += 1
         if dir_down:
@@ -41,7 +40,6 @@ def decryptRailFence(cipher, key):
         if row == key - 1:
             dir_down = False
 
-        # place the marker
         if (rail[row][col] != '*'):
             result.append(rail[row][col])
             col += 1
@@ -80,7 +78,7 @@ def decryptVigenere(cipher, key):
         ret += i2a(a2i(c) - a2i(key[i]))
     return ret
     
-def my_function(*args, **kwargs):
+def main(*args, **kwargs):
     ciphertext = Element('test-input').element.value
     Element('output').element.innerHTML = "running..."
     rf_key_length = 8

@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    margin: 0;
     text-align: center;
 }
 
@@ -45,4 +46,14 @@ button:hover {
 
 #output p {
     padding-bottom: 10px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #227dc7;
+    color: #fdfdfe;
 }

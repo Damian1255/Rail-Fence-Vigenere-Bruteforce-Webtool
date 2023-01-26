@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h2>Brute-force decryption of Rail-fence & Vigenère Product Cipher</h2>
+    <h2>Product Cipher Brute-force Decryption</h2>
     <p>by Damian</p>
+    <p>Designed to decrypt the ciphertext from Applied Cryptography Final Assignment. It is identifed that the product cipher uses both Vigenère and Rail-fence cipher to encrypt the plaintext.</p>
     <input type="text" id="test-input" placeholder="Enter Ciphertext"/>
     <button id="submit-button" type="submit" pys-onClick="my_function">Decrypt</button>
     <div id="status"></div>
-    <div id="test-output"></div>
-    <py-script src="py/bruteforce.py">
-
-    </py-script>
+    <div id="output"></div>
+    <py-script src="py/bruteforce.py"></py-script>
 </body>
 
 </html>

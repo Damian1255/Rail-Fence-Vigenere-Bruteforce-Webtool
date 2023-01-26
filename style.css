@@ -5,3 +5,44 @@ html {
 body {
     text-align: center;
 }
+
+h1, h3 {
+    margin-bottom: 0px;
+}
+
+input {
+    max-width: 50%;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 15px;
+    line-height: 32px;
+    border: 4px solid rgb(165, 223, 255);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    transition: all .3s;
+}
+
+input:hover {
+    border: 4px solid rgb(80, 168, 216);
+}
+
+button {
+    background: #227dc7;
+    border-radius: 5px;
+    padding: 14px 40px;
+    display: inline-block;
+    border: none;
+    color: #fdfdfe;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover {
+    background: #1b5e9a;
+}
+
+#output p {
+    padding-bottom: 10px;
+}

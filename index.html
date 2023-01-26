@@ -13,11 +13,22 @@
     <h1>Product Cipher Brute-force Decryption</h1>
     <p>by Damian</p>
     <p>Designed to decrypt the ciphertext from Applied Cryptography Final Assignment.<br>It is identifed that the product cipher uses both Vigenère and Rail-fence cipher to encrypt the plaintext.</p>
-    <input type="text" id="test-input" placeholder="Enter your ciphertext"/>
-    <button id="submit-button" type="submit" pys-onClick="my_function">Decrypt</button>
-    <div id="status"></div>
-    <div id="output"></div>
+    <p id="message">Initializing. Please wait...</p>
+    <div class="container" style="display: none;">
+        <input type="text" id="test-input" placeholder="Enter your ciphertext"/>
+        <button id="submit-button" type="submit" pys-onClick="my_function">Decrypt</button>
+        <div id="status"></div>
+        <div id="output"></div>
+    </div>
     <py-script src="py/bruteforce.py"></py-script>
+
+    <script>
+        // make the container visible after 6 seconds and hide the message
+        setTimeout(function() {
+            document.querySelector(".container").style.display = "block";
+            document.querySelector("#message").style.display = "none";
+        }, 6000);
+    </script>
 </body>
 
 </html>

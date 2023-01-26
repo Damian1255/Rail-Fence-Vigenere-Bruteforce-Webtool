@@ -98,4 +98,4 @@ def my_function(*args, **kwargs):
 
     Element('output').element.innerHTML = "<h3>Results</h3>"
     for result in sorted(results, reverse=True)[:3]:
-        Element('output').element.innerHTML += f'<p>Score = {result[0]} | Rail-Fence Key = {result[1]} | Vigenere Key = {result[2]} | Plain Text = {result[3]}</p>'
+        Element('output').element.innerHTML += f'<p><b> Plain Text = {result[3]}</b><br>Score = {result[0]} | Rail-Fence Key = {result[1]} | Vigenere Key = {result[2]}</p>'

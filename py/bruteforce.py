@@ -79,7 +79,7 @@ def decryptVigenere(cipher, key):
     return ret
     
 def main(*args, **kwargs):
-    ciphertext = Element('test-input').element.value
+    ciphertext = Element('input').element.value
     Element('output').element.innerHTML = "running..."
     rf_key_length = 8
     results = []
